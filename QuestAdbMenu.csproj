@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <RootNamespace>QuestAdbMenu</RootNamespace>
+    <AssemblyName>QuestAdbMenu</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Ship the default preset file next to the exe on every build/publish -->
+    <None Include="commands.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

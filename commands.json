@@ -1,0 +1,831 @@
+{
+  "title": "Quest Commander",
+  "children": [
+    {
+      "title": "Meta Quest 1",
+      "children": [
+        {
+          "title": "Refresh Rate",
+          "children": [
+            {
+              "title": "60 Hz (media apps only)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 60"
+              ]
+            },
+            {
+              "title": "72 Hz (default)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 72"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Resolution (per-eye render target)",
+          "children": [
+            {
+              "title": "75% - 912 x 1008",
+              "commands": [
+                "adb shell setprop debug.oculus.textureWidth 912",
+                "adb shell setprop debug.oculus.textureHeight 1008"
+              ]
+            },
+            {
+              "title": "100% Native - 1216 x 1344",
+              "commands": [
+                "adb shell setprop debug.oculus.textureWidth 1216",
+                "adb shell setprop debug.oculus.textureHeight 1344"
+              ]
+            },
+            {
+              "title": "125% Supersample - 1520 x 1680",
+              "commands": [
+                "adb shell setprop debug.oculus.textureWidth 1520",
+                "adb shell setprop debug.oculus.textureHeight 1680"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "GPU / CPU Levels",
+          "children": [
+            {
+              "title": "Max Performance (CPU 4 / GPU 4)",
+              "commands": [
+                "adb shell setprop debug.oculus.cpuLevel 4",
+                "adb shell setprop debug.oculus.gpuLevel 4"
+              ]
+            },
+            {
+              "title": "Balanced (CPU 2 / GPU 2)",
+              "commands": [
+                "adb shell setprop debug.oculus.cpuLevel 2",
+                "adb shell setprop debug.oculus.gpuLevel 2"
+              ]
+            },
+            {
+              "title": "Battery Saver (CPU 0 / GPU 0)",
+              "commands": [
+                "adb shell setprop debug.oculus.cpuLevel 0",
+                "adb shell setprop debug.oculus.gpuLevel 0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fixed Foveated Rendering",
+          "children": [
+            {
+              "title": "Off",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 0"
+              ]
+            },
+            {
+              "title": "Low",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 1"
+              ]
+            },
+            {
+              "title": "Medium",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 2"
+              ]
+            },
+            {
+              "title": "High",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 3"
+              ]
+            },
+            {
+              "title": "High Top",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 4"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Combined Presets",
+          "children": [
+            {
+              "title": "High Quality (72Hz, Native res, Max GPU/CPU, No Foveation)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 72",
+                "adb shell setprop debug.oculus.textureWidth 1216",
+                "adb shell setprop debug.oculus.textureHeight 1344",
+                "adb shell setprop debug.oculus.cpuLevel 4",
+                "adb shell setprop debug.oculus.gpuLevel 4",
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 0"
+              ]
+            },
+            {
+              "title": "Battery Saver (72Hz, 75% res, Low GPU/CPU, High Foveation)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 72",
+                "adb shell setprop debug.oculus.textureWidth 912",
+                "adb shell setprop debug.oculus.textureHeight 1008",
+                "adb shell setprop debug.oculus.cpuLevel 1",
+                "adb shell setprop debug.oculus.gpuLevel 1",
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Meta Quest 2",
+      "children": [
+        {
+          "title": "Refresh Rate",
+          "children": [
+            {
+              "title": "60 Hz (media apps only)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 60"
+              ]
+            },
+            {
+              "title": "72 Hz (default)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 72"
+              ]
+            },
+            {
+              "title": "80 Hz",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 80"
+              ]
+            },
+            {
+              "title": "90 Hz",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 90"
+              ]
+            },
+            {
+              "title": "120 Hz",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 120"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Resolution (per-eye render target)",
+          "children": [
+            {
+              "title": "75% - 1080 x 1188",
+              "commands": [
+                "adb shell setprop debug.oculus.textureWidth 1080",
+                "adb shell setprop debug.oculus.textureHeight 1188"
+              ]
+            },
+            {
+              "title": "100% Native - 1440 x 1584",
+              "commands": [
+                "adb shell setprop debug.oculus.textureWidth 1440",
+                "adb shell setprop debug.oculus.textureHeight 1584"
+              ]
+            },
+            {
+              "title": "125% Supersample - 1800 x 1980",
+              "commands": [
+                "adb shell setprop debug.oculus.textureWidth 1800",
+                "adb shell setprop debug.oculus.textureHeight 1980"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "GPU / CPU Levels",
+          "children": [
+            {
+              "title": "Max Performance (CPU 4 / GPU 4)",
+              "commands": [
+                "adb shell setprop debug.oculus.cpuLevel 4",
+                "adb shell setprop debug.oculus.gpuLevel 4"
+              ]
+            },
+            {
+              "title": "Balanced (CPU 2 / GPU 2)",
+              "commands": [
+                "adb shell setprop debug.oculus.cpuLevel 2",
+                "adb shell setprop debug.oculus.gpuLevel 2"
+              ]
+            },
+            {
+              "title": "Battery Saver (CPU 0 / GPU 0)",
+              "commands": [
+                "adb shell setprop debug.oculus.cpuLevel 0",
+                "adb shell setprop debug.oculus.gpuLevel 0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fixed Foveated Rendering",
+          "children": [
+            {
+              "title": "Off",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 0"
+              ]
+            },
+            {
+              "title": "Low",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 1"
+              ]
+            },
+            {
+              "title": "Medium",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 2"
+              ]
+            },
+            {
+              "title": "High",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 3"
+              ]
+            },
+            {
+              "title": "High Top",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 4"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Combined Presets",
+          "children": [
+            {
+              "title": "High Quality (120Hz, Native res, Max GPU/CPU, No Foveation)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 120",
+                "adb shell setprop debug.oculus.textureWidth 1440",
+                "adb shell setprop debug.oculus.textureHeight 1584",
+                "adb shell setprop debug.oculus.cpuLevel 4",
+                "adb shell setprop debug.oculus.gpuLevel 4",
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 0"
+              ]
+            },
+            {
+              "title": "Battery Saver (72Hz, 75% res, Low GPU/CPU, High Foveation)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 72",
+                "adb shell setprop debug.oculus.textureWidth 1080",
+                "adb shell setprop debug.oculus.textureHeight 1188",
+                "adb shell setprop debug.oculus.cpuLevel 1",
+                "adb shell setprop debug.oculus.gpuLevel 1",
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Meta Quest 3S",
+      "children": [
+        {
+          "title": "Refresh Rate",
+          "children": [
+            {
+              "title": "72 Hz (default)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 72"
+              ]
+            },
+            {
+              "title": "80 Hz",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 80"
+              ]
+            },
+            {
+              "title": "90 Hz",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 90"
+              ]
+            },
+            {
+              "title": "120 Hz",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 120"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Resolution (per-eye render target)",
+          "children": [
+            {
+              "title": "75% - 1260 x 1320",
+              "commands": [
+                "adb shell setprop debug.oculus.textureWidth 1260",
+                "adb shell setprop debug.oculus.textureHeight 1320"
+              ]
+            },
+            {
+              "title": "100% Native - 1680 x 1760",
+              "commands": [
+                "adb shell setprop debug.oculus.textureWidth 1680",
+                "adb shell setprop debug.oculus.textureHeight 1760"
+              ]
+            },
+            {
+              "title": "125% Supersample - 2100 x 2200",
+              "commands": [
+                "adb shell setprop debug.oculus.textureWidth 2100",
+                "adb shell setprop debug.oculus.textureHeight 2200"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "GPU / CPU Levels",
+          "children": [
+            {
+              "title": "Max Performance (CPU 4 / GPU 4)",
+              "commands": [
+                "adb shell setprop debug.oculus.cpuLevel 4",
+                "adb shell setprop debug.oculus.gpuLevel 4"
+              ]
+            },
+            {
+              "title": "Balanced (CPU 2 / GPU 2)",
+              "commands": [
+                "adb shell setprop debug.oculus.cpuLevel 2",
+                "adb shell setprop debug.oculus.gpuLevel 2"
+              ]
+            },
+            {
+              "title": "Battery Saver (CPU 0 / GPU 0)",
+              "commands": [
+                "adb shell setprop debug.oculus.cpuLevel 0",
+                "adb shell setprop debug.oculus.gpuLevel 0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fixed Foveated Rendering",
+          "children": [
+            {
+              "title": "Off",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 0"
+              ]
+            },
+            {
+              "title": "Low",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 1"
+              ]
+            },
+            {
+              "title": "Medium",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 2"
+              ]
+            },
+            {
+              "title": "High",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 3"
+              ]
+            },
+            {
+              "title": "High Top",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 4"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Combined Presets",
+          "children": [
+            {
+              "title": "High Quality (120Hz, Native res, Max GPU/CPU, No Foveation)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 120",
+                "adb shell setprop debug.oculus.textureWidth 1680",
+                "adb shell setprop debug.oculus.textureHeight 1760",
+                "adb shell setprop debug.oculus.cpuLevel 4",
+                "adb shell setprop debug.oculus.gpuLevel 4",
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 0"
+              ]
+            },
+            {
+              "title": "Battery Saver (72Hz, 75% res, Low GPU/CPU, High Foveation)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 72",
+                "adb shell setprop debug.oculus.textureWidth 1260",
+                "adb shell setprop debug.oculus.textureHeight 1320",
+                "adb shell setprop debug.oculus.cpuLevel 1",
+                "adb shell setprop debug.oculus.gpuLevel 1",
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Meta Quest 3",
+      "children": [
+        {
+          "title": "Refresh Rate",
+          "children": [
+            {
+              "title": "72 Hz (default)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 72"
+              ]
+            },
+            {
+              "title": "80 Hz",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 80"
+              ]
+            },
+            {
+              "title": "90 Hz",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 90"
+              ]
+            },
+            {
+              "title": "120 Hz",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 120"
+              ]
+            },
+            {
+              "title": "207 Hz (Extended, full resolution)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 207"
+              ]
+            },
+            {
+              "title": "240 Hz (Extended, Developer Mode + display scaling)",
+              "commands": [
+                "adb shell setprop debug.oculus.forceDisplayScaling 1",
+                "adb shell setprop debug.oculus.refreshRate 240"
+              ]
+            },
+            {
+              "title": "Restore standard scaling (undo 240Hz mode)",
+              "commands": [
+                "adb shell setprop debug.oculus.forceDisplayScaling ''",
+                "adb shell setprop debug.oculus.refreshRate 90"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Resolution (per-eye render target)",
+          "children": [
+            {
+              "title": "75% - 1260 x 1320",
+              "commands": [
+                "adb shell setprop debug.oculus.textureWidth 1260",
+                "adb shell setprop debug.oculus.textureHeight 1320"
+              ]
+            },
+            {
+              "title": "100% Native - 1680 x 1760",
+              "commands": [
+                "adb shell setprop debug.oculus.textureWidth 1680",
+                "adb shell setprop debug.oculus.textureHeight 1760"
+              ]
+            },
+            {
+              "title": "125% Supersample - 2100 x 2200",
+              "commands": [
+                "adb shell setprop debug.oculus.textureWidth 2100",
+                "adb shell setprop debug.oculus.textureHeight 2200"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "GPU / CPU Levels",
+          "children": [
+            {
+              "title": "Max Performance (CPU 4 / GPU 4)",
+              "commands": [
+                "adb shell setprop debug.oculus.cpuLevel 4",
+                "adb shell setprop debug.oculus.gpuLevel 4"
+              ]
+            },
+            {
+              "title": "Balanced (CPU 2 / GPU 2)",
+              "commands": [
+                "adb shell setprop debug.oculus.cpuLevel 2",
+                "adb shell setprop debug.oculus.gpuLevel 2"
+              ]
+            },
+            {
+              "title": "Battery Saver (CPU 0 / GPU 0)",
+              "commands": [
+                "adb shell setprop debug.oculus.cpuLevel 0",
+                "adb shell setprop debug.oculus.gpuLevel 0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fixed Foveated Rendering",
+          "children": [
+            {
+              "title": "Off",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 0"
+              ]
+            },
+            {
+              "title": "Low",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 1"
+              ]
+            },
+            {
+              "title": "Medium",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 2"
+              ]
+            },
+            {
+              "title": "High",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 3"
+              ]
+            },
+            {
+              "title": "High Top",
+              "commands": [
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 4"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Combined Presets",
+          "children": [
+            {
+              "title": "High Quality (120Hz, Native res, Max GPU/CPU, No Foveation)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 120",
+                "adb shell setprop debug.oculus.textureWidth 1680",
+                "adb shell setprop debug.oculus.textureHeight 1760",
+                "adb shell setprop debug.oculus.cpuLevel 4",
+                "adb shell setprop debug.oculus.gpuLevel 4",
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 0"
+              ]
+            },
+            {
+              "title": "Battery Saver (72Hz, 75% res, Low GPU/CPU, High Foveation)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 72",
+                "adb shell setprop debug.oculus.textureWidth 1260",
+                "adb shell setprop debug.oculus.textureHeight 1320",
+                "adb shell setprop debug.oculus.cpuLevel 1",
+                "adb shell setprop debug.oculus.gpuLevel 1",
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 3"
+              ]
+            },
+            {
+              "title": "Extreme (207Hz, Native res, Max GPU/CPU, No Foveation)",
+              "commands": [
+                "adb shell setprop debug.oculus.refreshRate 207",
+                "adb shell setprop debug.oculus.textureWidth 1680",
+                "adb shell setprop debug.oculus.textureHeight 1760",
+                "adb shell setprop debug.oculus.cpuLevel 4",
+                "adb shell setprop debug.oculus.gpuLevel 4",
+                "adb shell setprop debug.oculus.foveation.dynamic 0",
+                "adb shell setprop debug.oculus.foveation.level 0"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Screen Recording",
+      "children": [
+        {
+          "title": "Recording Controls",
+          "children": [
+            {
+              "title": "Start Recording",
+              "commands": [
+                "adb shell setprop debug.oculus.enableVideoCapture 1"
+              ]
+            },
+            {
+              "title": "Stop Recording",
+              "commands": [
+                "adb shell setprop debug.oculus.enableVideoCapture 0"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Capture Resolution",
+          "children": [
+            {
+              "title": "Default - 1024 x 1024",
+              "commands": [
+                "adb shell setprop debug.oculus.capture.width 1024",
+                "adb shell setprop debug.oculus.capture.height 1024"
+              ]
+            },
+            {
+              "title": "Full HD - 1920 x 1080",
+              "commands": [
+                "adb shell setprop debug.oculus.capture.width 1920",
+                "adb shell setprop debug.oculus.capture.height 1080"
+              ]
+            },
+            {
+              "title": "Max (community-reported) - 1920 x 2160",
+              "commands": [
+                "adb shell setprop debug.oculus.capture.width 1920",
+                "adb shell setprop debug.oculus.capture.height 2160"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Capture Framerate",
+          "children": [
+            {
+              "title": "Half Refresh Rate (default)",
+              "commands": [
+                "adb shell setprop debug.oculus.fullRateCapture 0"
+              ]
+            },
+            {
+              "title": "Full Refresh Rate",
+              "commands": [
+                "adb shell setprop debug.oculus.fullRateCapture 1"
+              ]
+            },
+            {
+              "title": "Force 60 FPS (community property, unconfirmed on all firmware)",
+              "commands": [
+                "adb shell setprop debug.oculus.capture.fps 60"
+              ]
+            },
+            {
+              "title": "Force 90 FPS (community property, unconfirmed on all firmware)",
+              "commands": [
+                "adb shell setprop debug.oculus.capture.fps 90"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Capture Bitrate",
+          "children": [
+            {
+              "title": "Default - 5 Mbps",
+              "commands": [
+                "adb shell setprop debug.oculus.capture.bitrate 5000000"
+              ]
+            },
+            {
+              "title": "High - 30 Mbps",
+              "commands": [
+                "adb shell setprop debug.oculus.capture.bitrate 30000000"
+              ]
+            },
+            {
+              "title": "Max - 50 Mbps",
+              "commands": [
+                "adb shell setprop debug.oculus.capture.bitrate 50000000"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Combined Presets",
+          "children": [
+            {
+              "title": "Max Recording Quality (1920x1080, Full Rate, 50 Mbps)",
+              "commands": [
+                "adb shell setprop debug.oculus.capture.width 1920",
+                "adb shell setprop debug.oculus.capture.height 1080",
+                "adb shell setprop debug.oculus.fullRateCapture 1",
+                "adb shell setprop debug.oculus.capture.bitrate 50000000"
+              ]
+            },
+            {
+              "title": "Reset to Defaults (1024x1024, Half Rate, 5 Mbps)",
+              "commands": [
+                "adb shell setprop debug.oculus.capture.width 1024",
+                "adb shell setprop debug.oculus.capture.height 1024",
+                "adb shell setprop debug.oculus.fullRateCapture 0",
+                "adb shell setprop debug.oculus.capture.bitrate 5000000"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Device Utilities",
+      "children": [
+        {
+          "title": "List Connected Devices",
+          "commands": [
+            "adb devices"
+          ]
+        },
+        {
+          "title": "Show Current Oculus Props",
+          "commands": [
+            "adb shell \"getprop | grep oculus\""
+          ]
+        },
+        {
+          "title": "Reboot Headset",
+          "commands": [
+            "adb reboot"
+          ]
+        },
+        {
+          "title": "Proximity Sensor",
+          "children": [
+            {
+              "title": "Disable (keep display on when not worn)",
+              "commands": [
+                "adb shell am broadcast -a com.oculus.vrpowermanager.prox_close"
+              ]
+            },
+            {
+              "title": "Enable (restore normal sensor behavior)",
+              "commands": [
+                "adb shell am broadcast -a com.oculus.vrpowermanager.automation_disable"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Boundary (Guardian)",
+          "children": [
+            {
+              "title": "Disable Boundary",
+              "commands": [
+                "adb shell setprop debug.oculus.guardian_pause 1"
+              ]
+            },
+            {
+              "title": "Enable Boundary",
+              "commands": [
+                "adb shell setprop debug.oculus.guardian_pause 0"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
